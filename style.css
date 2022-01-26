@@ -1,0 +1,54 @@
+h1:hover{
+    color: aquamarine;
+    font-size: 70px;
+    background-color: blue;
+}
+input :focus{
+    font-size: 40px;
+    font-weight: 30px;
+color: hotpink;
+}
+
+li:nth-child(2n+1){
+    /* 2n+1= Bejor ar kaj... 2n= jor ar kaj just 1,2 = oi line ar kaj */
+    background-color: indigo;
+    width: 20%;
+}
+
+.bulukulu::before{
+    content: "Hello " ;
+    color: indigo;
+    background-color: lawngreen;
+}
+.julumulu::after{
+    content: " good Bye";
+    color: indigo;
+    background-color: lawngreen;
+}
+
+body{
+    counter-reset: tomtom;
+}
+.test::before{
+    background-color: lawngreen;
+    counter-increment:tomtom ;
+    content: "Hello " counter(tomtom);
+}
+.container{
+    background-color:lightblue;
+}
+div{
+    height: 100px;
+    width: 100px;
+}
+#first{
+background-color: blue;
+}
+#second{
+    background-color:yellow;
+    position: relative;
+    left: 100px;
+}
+#third{
+    background-color:hotpink;
+}
